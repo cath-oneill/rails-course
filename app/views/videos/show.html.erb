@@ -1,5 +1,17 @@
 <h1><%= @video.title %></h1>
 
-<h3><%= @video.description %></h3>
+<h3>Description:<%= @video.description %></h3>
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/<%= @video.youtube_id %>" frameborder="0" allowfullscreen></iframe>
+
+<h3>Comments:</h3>
+<% @video.comments.each do |c| %>
+	<span><%= c.content %></span><br>
+<% end %>
+<br>
+
+<%= form_tag("/comments", method: "post") do %>  
+  <%= text_field_tag('content') %>
+
+  <%= submit_tag("Add Comment") %>  
+<% end %>

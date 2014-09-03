@@ -47,3 +47,14 @@ Sound.create([
     soundcloud_url: "18913738"
   }
   ])
+
+Comment.create([
+  {
+    content: "Brrrr! So cold.",
+    video_id: 3
+  },
+  {
+    content: "Let it go!",
+    video_id: 3
+  }
+  ])
