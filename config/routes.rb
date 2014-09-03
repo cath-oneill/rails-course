@@ -1,6 +1,7 @@
 Metube::Application.routes.draw do
   root to: "videos#index"
   resources :videos
+  resources :sounds
 
   # These are all replaced with the resources line above:
   # get "/videos", to: "videos#index"
