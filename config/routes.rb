@@ -1,15 +1,20 @@
 Metube::Application.routes.draw do
   root to: "videos#index"
-  get "/videos", to: "videos#index"
-  get "/videos/new", to: "videos#new"
-  get "/videos/:id", to: "videos#show"
+  resources :videos
 
-  post '/videos' => 'videos#create'
+  # These are all replaced with the resources line above:
+  # get "/videos", to: "videos#index"
+  # get "/videos/new", to: "videos#new"
+  # get "/videos/:id", to: "videos#show"
 
-  get "/videos/:id/edit", to: "videos#edit"
-  put "/videos/:id", to: "videos#update"
+  # post '/videos' => 'videos#create'
 
-  delete '/videos/:id' => 'videos#destroy'
+  # get "/videos/:id/edit", to: "videos#edit"
+  # put "/videos/:id", to: "videos#update"
+
+  # delete '/videos/:id' => 'videos#destroy'
+
+  ##########################################
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

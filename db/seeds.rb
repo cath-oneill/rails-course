@@ -36,3 +36,14 @@ Video.create([
     user_id: 1
   }
   ])
+
+Sound.create([
+  {
+    title: "Ring of Fire, Johnny Cash",
+    soundcloud_url: "https://soundcloud.com/johnnycash/johnny-cash-ring-of-fire"
+  },
+  {
+    title: "Sunshine, Atmosphere",
+    soundcloud_url: "https://soundcloud.com/rhymesayers/atmosphere-sunshine"
+  }
+  ])
