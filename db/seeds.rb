@@ -40,10 +40,10 @@ Video.create([
 Sound.create([
   {
     title: "Ring of Fire, Johnny Cash",
-    soundcloud_url: "https://soundcloud.com/johnnycash/johnny-cash-ring-of-fire"
+    soundcloud_url: "36508010"
   },
   {
     title: "Sunshine, Atmosphere",
-    soundcloud_url: "https://soundcloud.com/rhymesayers/atmosphere-sunshine"
+    soundcloud_url: "18913738"
   }
   ])
