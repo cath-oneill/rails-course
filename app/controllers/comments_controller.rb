@@ -7,6 +7,7 @@ class CommentsController < ApplicationController
     redirect_to :back 
   end
 
+  private
   def comment_params
     params.require(:comment).permit(:content, :video_id)
   end

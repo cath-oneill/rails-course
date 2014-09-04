@@ -2,8 +2,8 @@ Metube::Application.routes.draw do
 
   root to: "welcome#index"
 
-  resources :videos do
-    resources :comments, :only => [:index, :create]
+  resources :videos, :except => [:edit] do
+    resources :comments, :only => [:create, :update]
   end
   resources :sounds
 
